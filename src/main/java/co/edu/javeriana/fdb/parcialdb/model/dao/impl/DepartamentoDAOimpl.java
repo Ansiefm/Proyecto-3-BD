@@ -18,6 +18,7 @@ public class DepartamentoDAOimpl implements DepartamentoDAO {
         this.oracle = new Oracle();
     }
     
+    @Override
     public DepartamentoDTO create(DepartamentoDTO dep) {
         try{
             this.oracle.conectar();
@@ -111,6 +112,7 @@ public class DepartamentoDAOimpl implements DepartamentoDAO {
     }
 
     //////////
+    @Override
     public List<DepartamentoDTO> findAll() {
         try{
             
@@ -143,16 +145,19 @@ public class DepartamentoDAOimpl implements DepartamentoDAO {
         }
     }
 
+    @Override
 	public DepartamentoDTO edit(String nombre, DepartamentoDTO pais) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+    @Override
 	public Boolean delete(String nombre) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+    @Override
 	public DepartamentoDTO findById(String nombre) {
 		// TODO Auto-generated method stub
 		return null;
